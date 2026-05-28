@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="traduction.js" defer></script>
     <title>Projets | TheVaro93 Portfolio</title>
 </head>
 <body>
@@ -26,23 +27,29 @@
         <header class="header">
             <img class="avatar" src="img/TheVaro93_aki_circle.png" alt="Pdp Aki de TheVaro93">
             <div class="hero-copy">
-                <h1 class="brand">TheVaro93 (╯°□°)╯</h1>
-                <p class="hero-subtitle">Voici mes projets ! Combien, sur 10 ? (✧ω✧)</p>
-                <a class="project-link" href="index.html">Retour accueil</a>
+                <div class="brand-row">
+                    <h1 class="brand">TheVaro93 (╯°□°)╯</h1>
+                    <div class="lang-switch" role="group" aria-label="Sélecteur de langue">
+                        <button class="lang-btn active" type="button" data-lang="fr">FR</button>
+                        <button class="lang-btn" type="button" data-lang="en">EN</button>
+                    </div>
+                </div>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">Voici mes projets ! Combien, sur 10 ? (✧ω✧)</p>
+                <a class="project-link" href="index.html" data-i18n="backHome">Retour accueil</a>
             </div>
         </header>
 
         <section class="card project archived">
-            <h2>Mes projets terminés et archivés</h2>
-            <p>
+            <h2 data-i18n="projectsTitle">Mes projets terminés et archivés</h2>
+            <p data-i18n-html="panelDesc">
             - <strong>Panel_Minecraft</strong> : Un pannel de modération pour gérer avec une UI un serveur tournant en auto-hébergé pour les "dicated server" 
             Minecraft Bedrock; Un projet simple mais utile pour moi et mes amis... Et pour m'entrainer !! :]
             </p>
-            <a class="project-link" href="https://github.com/TheVaro93/Panel_Minecraft" target="_blank" rel="noopener noreferrer">Voir le pannel Minecraft</a>
+            <a class="project-link" href="https://github.com/TheVaro93/Panel_Minecraft" target="_blank" rel="noopener noreferrer" data-i18n="panelLink">Voir le pannel Minecraft</a>
         </section>
 
         <footer class="site-footer">
-            <p class="license">© 2026 TheVaro93 - Contenu sous licence MIT - Merci de ne pas me voler mon travail sans me créditer :P</p>
+            <p class="license" data-i18n="license">© 2026 TheVaro93 - Contenu sous licence MIT - Merci de ne pas me voler mon travail sans me créditer :P</p>
             <div class="contacts">
                 <a href="https://github.com/TheVaro93" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="mailto:thevaro93@proton.me">Email</a>

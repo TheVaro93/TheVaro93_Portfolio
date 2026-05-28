@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="traduction.js" defer></script>
     <title>TheVaro93 Portfolio</title>
 </head>
 <body>
@@ -26,14 +27,20 @@
         <header class="header">
             <img class="avatar" src="img/TheVaro93_aki_circle.png" alt="Pdp Aki de TheVaro93">
             <div class="hero-copy">
-                <h1 class="brand">TheVaro93 (╯°□°)╯</h1>
-                <p class="hero-subtitle">Voici mon portfolio ! Combien, sur 10 ? (✧ω✧)</p>
+                <div class="brand-row">
+                    <h1 class="brand">TheVaro93 (╯°□°)╯</h1>
+                    <div class="lang-switch" role="group" aria-label="Sélecteur de langue">
+                        <button class="lang-btn active" type="button" data-lang="fr">FR</button>
+                        <button class="lang-btn" type="button" data-lang="en">EN</button>
+                    </div>
+                </div>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">Voici mon portfolio ! Combien, sur 10 ? (✧ω✧)</p>
             </div>
         </header>
 
         <section class="card">
-            <h2>À propos de moi (⌒_⌒/)</h2>
-            <p>
+            <h2 data-i18n="aboutTitle">À propos de moi (⌒_⌒/)</h2>
+            <p data-i18n="aboutText">
                 J'ai toujours été intéressé par les écrans.
                 Tout d'abord par les jeux vidéo, ensuite par les téléphones, la tech et enfin les ordinateurs, puis j'ai fini par vouloir comprendre 
                 comment fonctionnait tout ça. J'ai finalement eu un ordinateur à mes 12 ans, 
@@ -43,10 +50,10 @@
         </section>
 
         <section class="card skills-card">
-            <h2>Compétences</h2>
+            <h2 data-i18n="skillsTitle">Compétences</h2>
             <div class="skills-groups">
                 <article class="skill-group">
-                    <h3>Maîtrisé ಥ‿ಥ</h3>
+                    <h3 data-i18n="skillsMastered">Maîtrisé ಥ‿ಥ</h3>
                     <ul class="mastered-list">
                         <li><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"></li>
                         <li><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"></li>
@@ -55,7 +62,7 @@
                 </article>
 
                 <article class="skill-group">
-                    <h3>En apprentissage (x_x)</h3>
+                    <h3 data-i18n="skillsLearning">En apprentissage (x_x)</h3>
                     <ul>
                         <li class="skill-badge-item"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Badge JavaScript"></li>
                         <li class="skill-badge-item"><img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="Badge C"></li>
@@ -75,7 +82,7 @@
                 </article>
 
                 <article class="skill-group">
-                    <h3>Que je voudrais apprendre щ(ºДºщ) </h3>
+                    <h3 data-i18n="skillsWant">Que je voudrais apprendre щ(ºДºщ) </h3>
                     <ul>
                         <li class="skill-badge-item"><img src="https://img.shields.io/badge/Java-F89820?style=for-the-badge&logo=openjdk&logoColor=white" alt="Badge Java"></li>
                         <li class="skill-badge-item"><img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Badge Rust"></li>
@@ -88,44 +95,45 @@
 
         <section class="projects">
             <article class="card project wanted">
-                <h3>Projets que je veux faire (ᗒᗨᗕ)</h3>
-                <p>
+                <h3 data-i18n="wantedTitle">Projets que je veux faire (ᗒᗨᗕ)</h3>
+                <p data-i18n="wantedText">
                     Une application open-source pour gérer la domotique de sa maison, 
                     avec la simplicité de Google Home mais sans l'espionnage et les limitations de customisation.
                 </p>
             </article>
 
             <article class="card project current">
-                <h3>Projets en cours ヽ(ﾟ〇ﾟ)ﾉ </h3>
-                <p>
+                <h3 data-i18n="currentTitle">Projets en cours ヽ(ﾟ〇ﾟ)ﾉ </h3>
+                <p data-i18n="currentText">
                     BonkDrop: une plateforme en cours de développement pour partager des contenus rapidement
                     et progresser en conditions réelles sur le front et le back. Je gère un serveur, un front, 
                     une base de donnée et du stockage. ٩(^ᴗ^)۶
                 </p>
-                <a class="project-link" href="https://bonkdrop.fr" target="_blank" rel="noopener noreferrer">Voir BonkDrop</a>
+                <a class="project-link" href="https://bonkdrop.fr" target="_blank" rel="noopener noreferrer" data-i18n="currentLink">Voir BonkDrop</a>
             </article>
 
             <article class="card project archived">
-                <h3>Projets archivés et terminés ¯＼_(ツ)_/¯ </h3>
-                <p>
+                <h3 data-i18n="archivedTitle">Projets archivés et terminés ¯＼_(ツ)_/¯ </h3>
+                <p data-i18n="archivedText">
                     Je mets ici tous mes projets terminés et archivés, pour pouvoir les indexer
                     facilement et les partager. N'hésiter pas à y jeter un coup d'oeuil et de me donner votre avis ! ^^
                 </p>
-                <a class="project-link" href="projets.html">Voir mes projets</a>
+                <a class="project-link" href="projets.html" data-i18n="archivedLink">Voir mes projets</a>
             </article>
         </section>
 
         <section class="card">
-            <h2>Ma grille GitHub  (¬‿¬) </h2>
+            <h2 data-i18n="gridTitle">Ma grille GitHub  (¬‿¬) </h2>
             <img
                 class="github-grid"
                 src="https://ghchart.rshah.org/TheVaro93"
                 alt="Grille de contributions GitHub de TheVaro93"
+                data-i18n-alt="gridAlt"
             >
         </section>
 
         <footer class="site-footer">
-            <p class="license">© 2026 TheVaro93 - Contenu sous licence MIT - Merci de ne pas me voler mon travail sans me créditer :P</p>
+            <p class="license" data-i18n="license">© 2026 TheVaro93 - Contenu sous licence MIT - Merci de ne pas me voler mon travail sans me créditer :P</p>
             <div class="contacts">
                 <a href="https://github.com/TheVaro93" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="mailto:thevaro93@proton.me">Email</a>
