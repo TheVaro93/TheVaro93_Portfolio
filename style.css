@@ -253,6 +253,47 @@ h2 {
 
 .skill-badge-item img {
     flex-shrink: 0;
+    display: inline-block;
+}
+
+.css3-item {
+    display: inline-flex;
+    align-items: center;
+}
+
+.css3-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.25rem;
+    height: 30px;
+    padding: 0 6px 0 8px;
+    width: 88px;
+    min-width: 88px;
+    max-width: 88px;
+    border-radius: 8px;
+    background: #1c78be;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.css3-logo {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    display: block;
+    flex: 0 0 auto;
+}
+
+.css3-text {
+    color: #ffffff;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 800;
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    flex: 0 0 auto;
 }
 
 .nyarch-badge {
