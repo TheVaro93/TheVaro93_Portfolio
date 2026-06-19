@@ -30,13 +30,11 @@ body {
     inset: 0;
     pointer-events: none;
     z-index: 0;
-    background-image: repeating-linear-gradient(
-        45deg,
-        rgba(139, 92, 246, 0.08) 0,
-        rgba(139, 92, 246, 0.08) 1px,
-        transparent 1px,
-        transparent 16px
-    );
+    background-image: repeating-linear-gradient(45deg,
+            rgba(139, 92, 246, 0.08) 0,
+            rgba(139, 92, 246, 0.08) 1px,
+            transparent 1px,
+            transparent 16px);
 }
 
 .portfolio {
@@ -434,7 +432,7 @@ img {
     .skills-groups {
         grid-template-columns: 1fr;
     }
-    
+
     h1 {
         font-size: 1.6rem;
     }
